@@ -2,18 +2,18 @@ import sys
 import pygame
 
 pygame.init()
-size = width,height = 640, 480
+size = width,height = 624, 480
 screen = pygame.display.set_mode(size)
 color = (255, 255, 255)
 
-ball = pygame.image.load('ball.png')
+ball = pygame.image.load('ball.png').convert_alpha()
 ballrect = ball.get_rect()
 
-speed = [2, 2]
+speed = [5, 5]
 clock = pygame.time.Clock()
 
 while True:
-    clock.tick(50)
+    clock.tick(5)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             sys.exit()
