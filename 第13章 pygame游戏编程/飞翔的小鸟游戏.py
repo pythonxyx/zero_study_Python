@@ -97,7 +97,7 @@ def checkDead():
 
 def getResult():
     final_text1 = 'Game Over'
-    final_text2 = 'Your final score：'+str(score)
+    final_text2 = 'final score：'+str(score)
     ft1_font = pygame.font.SysFont('Arial',70)
     ft1_surf = font.render(final_text1,1,(242,3,36))
     ft2_font = pygame.font.SysFont('Arial',50)
